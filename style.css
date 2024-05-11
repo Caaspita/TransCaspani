@@ -351,3 +351,19 @@ p{
 .wsp-icon{
     margin-top:16px;
 }
+
+/* ------ Media Querys ------ */
+@media (min-width: 320px) {
+    
+}
+@media (min-width: 481px) {
+    
+}
+@media (min-width: 769px) {
+    
+}
+@media (min-width: 1025px) {
+    
+}
+
+
