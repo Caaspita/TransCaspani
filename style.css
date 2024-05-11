@@ -257,7 +257,6 @@ p{
     font-size: 20px;
     padding: 0 0 10px;
     font-family: var(--FontRubik);
-    white-space: nowrap;
 }
 .s_items-box{
     display: flex;
@@ -376,6 +375,9 @@ p{
     .servicios_titulo{
         width: 550px;
         margin-bottom: 30px;
+    }
+    .s_item-titulo{
+        white-space: nowrap;
     }
 
 }
