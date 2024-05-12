@@ -36,7 +36,7 @@ h1{
 }
 h2{
     color: var(--White);
-    font-size: 48px;
+    font-size: 24px;
     font-family: var(--FontRubik);
 }
 h3{
@@ -142,9 +142,9 @@ p{
 .banner{
     position: relative;
     background-image: url(./img/Banner.webp);
-    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 600px;
     background-position: center center;
 }
 .header_container-abajo{
@@ -162,7 +162,7 @@ p{
     margin: 0 auto;
     width: 100%;
     background-color: red;
-    padding: 40px;
+    padding: 15px;
 }
 .glass-effect{
     background-color: rgba(206, 206, 206, 0.01);
@@ -187,7 +187,7 @@ p{
     background-color: var(--Rojo);
     width: 4px;
     height: 25px;
-    left: 40px;
+    left: 15px;
 }
 
 /* Servicios */
@@ -234,7 +234,7 @@ p{
     width: 100%;
 }
 .servicios_items img{
-    padding: 0 10px;
+    scale: 0.7;
 }
 .servicios_items-contenedor{
     display: flex;
@@ -270,9 +270,8 @@ p{
     align-items: center;
     position: relative;
     background: url(./img/NosotrosBanner.webp) no-repeat;
-    background-size: cover;
-    background-position: 70% 40%;
-    height: 750px;
+    background-size: contain;
+    height: 500px;
 }
 .nosotros{
     display: flex;
@@ -284,7 +283,7 @@ p{
     width: 100%;
     z-index: 1;
     background-color: var(--White);
-    padding: 60px;
+    padding: 20px;
 }
 .nosotros_p{
     color: var(--parrafoClaro);
@@ -364,6 +363,13 @@ p{
 
 /* ------ Media Querys ------ */
 @media (min-width: 320px) {
+    h2{
+        font-size: 36px;
+    }
+    .servicios_items img{
+        padding: 0 10px;
+        scale: 1;
+    }
 }
 @media (min-width: 481px) {
     h2{
@@ -378,6 +384,24 @@ p{
     }
     .s_item-titulo{
         white-space: nowrap;
+    }
+    .banner_titulo{
+        padding: 40px;
+    }
+    .banner{
+        height: 100vh;
+        background-size: cover;
+    }
+    .banner_etiqueta-oscura:after{
+        left: 40px;
+    }
+    .nosotros{
+        padding: 60px;
+    }
+    .nosotros-banner{
+        background-size: cover;
+        height: 750px;
+        background-position: 70% 40%;
     }
 
 }
